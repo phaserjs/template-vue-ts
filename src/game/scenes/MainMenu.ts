@@ -6,16 +6,11 @@ export class MainMenu extends Scene
     background: GameObjects.Image;
     logo: GameObjects.Image;
     title: GameObjects.Text;
-    logo_tween: Phaser.Tweens.Tween | null;
+    logoTween: Phaser.Tweens.Tween | null;
 
     constructor ()
     {
         super('MainMenu');
-    }
-
-    init()
-    {
-        this.logo_tween = null;
     }
 
     create ()
@@ -23,43 +18,45 @@ export class MainMenu extends Scene
         this.background = this.add.image(512, 384, 'background');
 
         this.logo = this.add.image(512, 300, 'logo');
+        this.logo.setDepth(100);
 
         this.title = this.add.text(512, 460, 'Main Menu', {
             fontFamily: 'Arial Black', fontSize: 38, color: '#ffffff',
             stroke: '#000000', strokeThickness: 8,
             align: 'center'
         }).setOrigin(0.5);
-
-        this.input.once('pointerdown', () => {
-
-            this.scene.start('Game');
-
-        });
+        this.title.setDepth(100);
 
         EventBus.emit('current-scene-ready', this);
     }
 
     
-    changeScene()
+    changeScene ()
     {
+        if (this.logoTween)
+        {
+            this.logoTween.stop();
+            this.logoTween = null;
+        }
+
         this.scene.start('Game');
     }
 
     moveLogo(callback: ({x, y}: {x: number, y: number}) => void)
     {
-        if (this.logo_tween)
+        if (this.logoTween)
         {
-            if (this.logo_tween.isPlaying())
+            if (this.logoTween.isPlaying())
             {
-                this.logo_tween.pause();
+                this.logoTween.pause();
             }
             else
             {
-                this.logo_tween.play();
+                this.logoTween.play();
             }
         } else {
 
-            this.logo_tween = this.tweens.add({
+            this.logoTween = this.tweens.add({
                 targets: this.logo,
                 y: 200,
                 x: 600,
