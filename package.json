@@ -1,6 +1,6 @@
 {
     "name": "template-vue-ts",
-    "description": "A Phaser 3 project template that demonstrates Vue communication and uses Vite for bundling.",
+    "description": "A Phaser 3 TypeScript project template that demonstrates Vue communication and uses Vite for bundling.",
     "version": "1.0.0",
     "repository": {
         "type": "git",
