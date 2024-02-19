@@ -54,8 +54,9 @@ export class MainMenu extends Scene
             {
                 this.logoTween.play();
             }
-        } else {
-
+        } 
+        else
+        {
             this.logoTween = this.tweens.add({
                 targets: this.logo,
                 y: 200,
@@ -65,7 +66,8 @@ export class MainMenu extends Scene
                 yoyo: true,
                 repeat: -1,
                 onUpdate: () => {
-                    if (callback) {
+                    if (callback)
+                    {
                         callback({ x: Math.floor(this.logo.x), y: Math.floor(this.logo.y) })
                     }
                 }

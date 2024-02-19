@@ -25,6 +25,7 @@ export class GameOver extends Scene
             stroke: '#000000', strokeThickness: 8,
             align: 'center'
         });
+        
         this.gameOverText.setOrigin(0.5);
         this.gameOverText.setDepth(100);
         
