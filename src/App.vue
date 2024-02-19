@@ -83,16 +83,16 @@ const currentScene = (scene: MainMenu) => {
     <PhaserGame ref="phaserRef" @current-active-scene="currentScene" />
     <div>
         <div>
-            <button class="button-change-scene" @click="changeScene">Change Scene</button>
+            <button class="button" @click="changeScene">Change Scene</button>
         </div>
         <div>
-            <button :disabled="canMoveSprite" class="button-change-scene" @click="moveSprite">Toggle Movement</button>
+            <button :disabled="canMoveSprite" class="button" @click="moveSprite">Toggle Movement</button>
         </div>
-        <div class="margin-left">Sprite position:
+        <div class="spritePosition">Sprite Position:
             <pre>{{ spritePosition }}</pre>
         </div>
         <div>
-            <button class="button-change-scene" @click="addSprite">Add New Sprite</button>
+            <button class="button" @click="addSprite">Add New Sprite</button>
         </div>
     </div>
 </template>
