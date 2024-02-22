@@ -6,10 +6,10 @@ This is a Phaser 3 project template that uses the Vue framework, TypeScript and 
 
 This template has been updated for:
 
-- [Phaser 3.70.0](https://github.com/phaserjs/phaser)
-- [Vue 3.4.15](https://github.com/vuejs)
-- [Vite 5.0.11](https://github.com/vitejs/vite)
-- [TypeScript 5.3.0](https://github.com/microsoft/TypeScript)
+- [Phaser 3.80.0](https://github.com/phaserjs/phaser)
+- [Vue 3.4.19](https://github.com/vuejs)
+- [Vite 5.1.4](https://github.com/vitejs/vite)
+- [TypeScript 5.3.3](https://github.com/microsoft/TypeScript)
 
 ![screenshot](screenshot.png)
 
