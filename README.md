@@ -8,7 +8,7 @@ This is a Phaser 3 project template that uses the Vue framework, TypeScript and 
 
 This template has been updated for:
 
-- [Phaser 3.87.0](https://github.com/phaserjs/phaser)
+- [Phaser 3.88.0](https://github.com/phaserjs/phaser)
 - [Vue 3.4.27](https://github.com/vuejs)
 - [Vite 5.2.11](https://github.com/vitejs/vite)
 - [TypeScript 5.3.3](https://github.com/microsoft/TypeScript)
