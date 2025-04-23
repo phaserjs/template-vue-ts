@@ -9,9 +9,9 @@ This is a Phaser 3 project template that uses the Vue framework, TypeScript and 
 This template has been updated for:
 
 - [Phaser 3.88.2](https://github.com/phaserjs/phaser)
-- [Vue 3.4.27](https://github.com/vuejs)
-- [Vite 5.2.11](https://github.com/vitejs/vite)
-- [TypeScript 5.3.3](https://github.com/microsoft/TypeScript)
+- [Vue 3.5.13](https://github.com/vuejs)
+- [Vite 6.3.1](https://github.com/vitejs/vite)
+- [TypeScript 5.7.2](https://github.com/microsoft/TypeScript)
 
 ![screenshot](screenshot.png)
 
@@ -41,18 +41,20 @@ Once the server is running you can edit any of the files in the `src` folder. Vi
 
 We have provided a default project structure to get you started. This is as follows:
 
-- `index.html` - A basic HTML page to contain the game.
-- `src` - Contains the Vue source code.
-- `src/main.ts` - The main **Vue** entry point. This bootstraps the Vue application.
-- `src/vite-env.d.ts` - Global TypeScript declarations, provide types information.
-- `src/App.vue` - The main Vue component.
-- `src/game/PhaserGame.vue` - The Vue component that initializes the Phaser Game and serve like a bridge between Vue and Phaser.
-- `src/game/EventBus.ts` - A simple event bus to communicate between Vue and Phaser.
-- `src/game` - Contains the game source code.
-- `src/game/main.ts` - The main **game** entry point. This contains the game configuration and start the game.
-- `src/game/scenes/` - The Phaser Scenes are in this folder.
-- `public/style.css` - Some simple CSS rules to help with page layout.
-- `public/assets` - Contains the static assets used by the game.
+| Path                          | Description                                                                                     |
+|-------------------------------|-------------------------------------------------------------------------------------------------|
+| `index.html`                  | A basic HTML page to contain the game.                                                         |
+| `src`                         | Contains the Vue source code.                                                                  |
+| `src/main.ts`                 | The main **Vue** entry point. This bootstraps the Vue application.                             |
+| `src/vite-env.d.ts`           | Global TypeScript declarations, providing type information.                                    |
+| `src/App.vue`                 | The main Vue component.                                                                        |
+| `src/PhaserGame.vue`     | The Vue component that initializes the Phaser Game and serves as a bridge between Vue and Phaser. |
+| `src/game/EventBus.ts`        | A simple event bus to communicate between Vue and Phaser.                                      |
+| `src/game`                    | Contains the game source code.                                                                |
+| `src/game/main.ts`            | The main **game** entry point. This contains the game configuration and starts the game.       |
+| `src/game/scenes/`            | The Phaser Scenes are in this folder.                                                         |
+| `public/style.css`            | Some simple CSS rules to help with page layout.                                               |
+| `public/assets`               | Contains the static assets used by the game.                                                  |
 
 ## Vue Bridge
 
@@ -236,6 +238,6 @@ We love to see what developers like you create with Phaser! It really motivates 
 
 Created by [Phaser Studio](mailto:support@phaser.io). Powered by coffee, anime, pixels and love.
 
-The Phaser logo and characters are &copy; 2011 - 2024 Phaser Studio Inc.
+The Phaser logo and characters are &copy; 2011 - 2025 Phaser Studio Inc.
 
 All rights reserved.
