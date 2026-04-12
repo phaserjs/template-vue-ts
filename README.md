@@ -1,6 +1,6 @@
 # Phaser Vue TypeScript Template
 
-This is a Phaser 3 project template that uses the Vue framework, TypeScript and Vite for bundling. It includes a bridge for Vue to Phaser game communication, hot-reloading for quick development workflow and scripts to generate production-ready builds.
+This is a Phaser 3 project template that uses the Vue framework, TypeScript, and Vite for bundling. It includes a bridge for Vue to Phaser game communication, hot-reloading for a quick development workflow and scripts to generate production-ready builds.
 
 **[This Template is also available as a JavaScript version.](https://github.com/phaserjs/template-vue)**
 
@@ -82,11 +82,11 @@ Once exposed, you can access them like any regular state reference.
 
 ## Phaser Scene Handling
 
-In Phaser, the Scene is the lifeblood of your game. It is where you sprites, game logic and all of the Phaser systems live. You can also have multiple scenes running at the same time. This template provides a way to obtain the current active scene from Vue.
+In Phaser, the Scene is the lifeblood of your game. It is where your sprites, game logic, and all of the Phaser systems live. You can also have multiple scenes running at the same time. This template provides a way to obtain the current active scene from Vue.
 
 You can get the current Phaser Scene from the component event `"current-active-scene"`. In order to do this, you need to emit the event `"current-scene-ready"` from the Phaser Scene class. This event should be emitted when the scene is ready to be used. You can see this done in all of the Scenes in our template.
 
-**Important**: When you add a new Scene to your game, make sure you expose to Vue by emitting the `"current-scene-ready"` event via the `EventBus`, like this:
+**Important**: When you add a new Scene to your game, make sure you expose it to Vue by emitting the `"current-scene-ready"` event via the `EventBus`, like this:
 
 
 ```js
@@ -138,7 +138,7 @@ In the code above, you can get a reference to the current Phaser Game instance a
 
 From this state reference, the game instance is available via `toRaw(phaserRef.value.game)` and the most recently active Scene via `toRaw(phaserRef.value.scene)`
 
-The `onCurrentActiveScene` callback will also be invoked whenever the the Phaser Scene changes, as long as you emit the event via the EventBus, as outlined above.
+The `onCurrentActiveScene` callback will also be invoked whenever the Phaser Scene changes, as long as you emit the event via the EventBus, as outlined above.
 
 ## Handling Assets
 
@@ -181,7 +181,7 @@ If you want to customize your build, such as adding plugin (i.e. for loading CSS
 
 ## About log.js
 
-If you inspect our node scripts you will see there is a file called `log.js`. This file makes a single silent API call to a domain called `gryzor.co`. This domain is owned by Phaser Studio Inc. The domain name is a homage to one of our favorite retro games.
+If you inspect our node scripts, you will see there is a file called `log.js`. This file makes a single silent API call to a domain called `gryzor.co`. This domain is owned by Phaser Studio Inc. The domain name is a homage to one of our favorite retro games.
 
 We send the following 3 pieces of data to this API: The name of the template being used (vue, react, etc). If the build was 'dev' or 'prod' and finally the version of Phaser being used.
 
@@ -227,7 +227,7 @@ Either of these will stop `log.js` from running. If you do decide to do this, pl
 
 ## Join the Phaser Community!
 
-We love to see what developers like you create with Phaser! It really motivates us to keep improving. So please join our community and show-off your work 😄
+We love to see what developers like you create with Phaser! It really motivates us to keep improving. So please join our community and show off your work 😄
 
 **Visit:** The [Phaser website](https://phaser.io) and follow on [Phaser Twitter](https://twitter.com/phaser_)<br />
 **Play:** Some of the amazing games [#madewithphaser](https://twitter.com/search?q=%23madewithphaser&src=typed_query&f=live)<br />
@@ -236,7 +236,7 @@ We love to see what developers like you create with Phaser! It really motivates 
 **Code:** 2000+ [Examples](https://labs.phaser.io)<br />
 **Read:** The [Phaser World](https://phaser.io/community/newsletter) Newsletter<br />
 
-Created by [Phaser Studio](mailto:support@phaser.io). Powered by coffee, anime, pixels and love.
+Created by [Phaser Studio](mailto:support@phaser.io). Powered by coffee, anime, pixels, and love.
 
 The Phaser logo and characters are &copy; 2011 - 2025 Phaser Studio Inc.
 
